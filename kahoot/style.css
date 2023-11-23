@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.question {
+    background-color: white; 
+    text-align: center;
+    padding: 20px;
+
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+}
+.skip {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    width: max-content; 
+display: block;
+margin-left: auto;
+    font-size: 25px;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.timer {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.main {
+    width: 800px; 
+    border-radius: 10px;
+    box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+}
+.count {
+    font-size: 40px;
+    text-align: center;
+}
+.btns {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px; 
+}
+.btn {
+    display: block;
+    width: 100%;
+    padding: 50px 10px;
+    background-color: blue; 
+    border-radius: 10px; 
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    transition: all 0.3s; 
+}
+.btn:hover{
+    opacity: 0.7;
+}
+.btn-1 {
+    box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+}
+.btn-2 {
+    background-color: red;
+    box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+} 
+
+.btn-3{
+    background-color: darkgreen;
+}
+.btn-4{
+    background-color: orange;
+}
+.restart{
+    display: block;
+    width: max-content;
+    background-color: red;
+    color: white; 
+
+    display: flex;
+    justify-content: center; 
+    margin: 0 auto; 
+    padding: 20px; 
+    font-size: 50px; 
+    text-decoration: none; 
+}
