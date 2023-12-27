@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Fredoka', sans-serif;
+    background: #f2ceda58;
+}
+
+.btn{
+    color: #FAFAFA;
+
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+border-radius: 5px;
+background: #D23166;
+padding: 15px 50px;
+border: none;
+}
+
+
+.header {
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+}
+.header__menu {
+    display: flex;
+    gap: 40px;
+}
+.header__link {
+    color: #150101;
+text-decoration: none;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.header__link:hover{
+    color: #D23166;
+}
+.header__btn {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.feel{
+
+    padding-top: 50px;
+}
+.feel__wrap {
+    display: flex;
+    align-items: center;
+}
+.feel__box {
+    
+
+}
+.feel__subtitle {
+    color: #0F0101;
+
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 1.4px;
+}
+.feel__title {
+    color: #0F0101;
+
+font-size: 57.33px;
+font-style: normal;
+font-weight: 600;
+line-height: 120.5%; /* 69.083px */
+}
+ .feel__title span{
+    color:#D23166;
+ }
+.feel__text {
+    color: #0F0101;
+
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px; /* 150% */
+
+padding: 35px 0 50px;
+}
+.feel__btn {
+}
+
+.feel__img {
+    width: 50%;
+    animation: ice 1s infinite alternate linear;
+}
+
+
+
+
+
+
+
+@media (max-width:1100px) {
+    .feel__title{
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width:900px){
+.container{
+    width: 90%;
+}
+
+.header__menu{
+    display: none;
+}
+}
+
+
+@media (max-width:600px){
+    .feel__wrap{
+        flex-direction: column-reverse;
+    }
+
+    .feel__img{
+        width: 85%; 
+    }
+
+    .feel__title{
+        font-size: 35px; 
+    }
+
+    .feel__box{
+        text-align: center;
+    }
+}
+
+
+@keyframes ice {
+   0%{
+    transform: translateY(0px);
+   } 
+   100%{
+    transform: translateY(10px);
+   }
+}
