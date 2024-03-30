@@ -51,37 +51,37 @@ function burgerMenu() {
 
   const cards = [
     {
-      img: '../img/card1.jpg',
+      img: './img/card1.jpg',
       title: 'Tray with food',
       price: '30$',
     },
 
     {
-      img: '../img/card2.jpg',
+      img: './img/card2.jpg',
       title: 'Twill seat cushion',
       price: '40$',
     },
 
     {
-      img: '../img/card3.jpg',
+      img: './img/card3.jpg',
       title: 'Fluted beverage glass',
       price: '55$',
     },
 
     {
-      img: '../img/card4.jpg',
+      img: './img/card4.jpg',
       title: 'Ceramic egg cup',
       price: '33$',
     },
 
     {
-      img: '../img/card5.jpg',
+      img: './img/card5.jpg',
       title: 'Small bamboo box',
       price: '65$',
     },
 
     {
-      img: '../img/card6.jpg',
+      img: './img/card6.jpg',
       title: 'Metal cutlery basket',
       price: '42$',
     },
