@@ -1,0 +1,240 @@
+nav {
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo a {
+  color: black;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.menu__item {
+  margin-left: 25px;
+}
+.menu__item-link {
+  color: black;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .menu {
+    position: fixed;
+    background: #131418;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+  }
+  .menu.active {
+    display: flex;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    pointer-events: all;
+    justify-content: center;
+    align-items: center;
+    z-index: 22;
+    animation: fade 0.1s linear;
+  }
+  .burger {
+    display: block;
+    position: relative;
+    height: 20px;
+    width: 30px;
+    z-index: 102;
+    cursor: pointer;
+  }
+  .burger.active-burger:before {
+    background: #fff;
+    transform: rotate(45deg);
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+    top: 8px;
+  }
+  .burger.active-burger:after {
+    background: #fff;
+    transform: rotate(-45deg);
+    bottom: 10px;
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+  }
+  .burger.active-burger span {
+    transform: scale(0);
+  }
+  .burger:before, .burger:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #000;
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+  }
+  .burger:before {
+    top: 0;
+  }
+  .burger::after {
+    bottom: 0;
+  }
+  .burger span {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: 100%;
+    background: #000;
+    height: 2px;
+    transform: scale(1);
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+  }
+  .menu__item {
+    margin-top: 15px;
+  }
+  .menu__item-link {
+    color: white;
+  }
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+.navbar__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__box {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.navbar__inner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.navbar__icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.room {
+  background-image: url(../img/room.jpg);
+  padding-top: 110px;
+  padding-bottom: 60px;
+}
+
+.room__wrapper {
+  padding: 60px 60px;
+  max-width: 550px;
+  background-color: white;
+  padding: 60px 100px 60px 130px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .room__wrapper {
+    padding: 30px 50px 30px 65px;
+  }
+}
+.room__wrapper h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.room__wrapper p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.1;
+}
+.room__wrapper button {
+  width: 150px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  padding: 16px;
+  border: 1px solid black;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.room__price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.room__price h4 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #7b5136;
+}
+.room__price s {
+  color: #7b5136;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.top__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.top__card {
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  gap: 30px;
+}
+.top__card h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.top__card img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.top__box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-right: 15px;
+}
+
+.top h2 {
+  padding: 85px 0 50px;
+}/*# sourceMappingURL=style.css.map */
